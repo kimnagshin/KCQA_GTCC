@@ -80,14 +80,14 @@ export const Landing: React.FC = () => {
     };
 
     const services = [
-        { title: '상담', icon: <Users className="w-8 h-8" />, desc: '성공적인 자격 취득을 위한 전문 컨설팅.', bg: isDarkMode ? 'bg-blue-900/40' : 'bg-blue-50' },
-        { title: '관리', icon: <Briefcase className="w-8 h-8" />, desc: '자격 기준의 체계적인 관리 및 감독.', bg: isDarkMode ? 'bg-emerald-900/40' : 'bg-emerald-50' },
-        { title: '특성화', icon: <Wrench className="w-8 h-8" />, desc: '산업 수요 중심의 특성화 교육 훈련.', bg: isDarkMode ? 'bg-indigo-900/40' : 'bg-indigo-50' },
-        { title: '연구', icon: <Microscope className="w-8 h-8" />, desc: '직무 역량 평가 체계의 지속적 연구.', bg: isDarkMode ? 'bg-cyan-900/40' : 'bg-cyan-50' },
-        { title: '복지', icon: <Heart className="w-8 h-8" />, desc: '전문가의 지속적인 성장과 복지 지원.', bg: isDarkMode ? 'bg-rose-900/40' : 'bg-rose-50' },
-        { title: '행정', icon: <Shield className="w-8 h-8" />, desc: '신뢰할 수 있는 자격 검증 시스템.', bg: isDarkMode ? 'bg-slate-800/40' : 'bg-slate-50' },
-        { title: '교육', icon: <BookOpen className="w-8 h-8" />, desc: '글로벌 인재 양성을 위한 혁신적 커리큘럼.', bg: isDarkMode ? 'bg-teal-900/40' : 'bg-teal-50' },
-        { title: '외국어', icon: <Globe className="w-8 h-8" />, desc: '글로벌 소통을 위한 외국어 능력 평가.', bg: isDarkMode ? 'bg-violet-900/40' : 'bg-violet-50' },
+        { title: '상담', icon: <Users className="w-8 h-8" />, desc: '모든 상담 관련 과정을 포함한 자격.', bg: isDarkMode ? 'bg-blue-900/40' : 'bg-blue-50' },
+        { title: '관리', icon: <Briefcase className="w-8 h-8" />, desc: '자격 기준과 운영 전반을 포함한 관리 자격.', bg: isDarkMode ? 'bg-emerald-900/40' : 'bg-emerald-50' },
+        { title: '특성화', icon: <Wrench className="w-8 h-8" />, desc: '산업 맞춤 교육과 훈련을 포함한 특성화 자격.', bg: isDarkMode ? 'bg-indigo-900/40' : 'bg-indigo-50' },
+        { title: '연구', icon: <Microscope className="w-8 h-8" />, desc: '직무 역량 평가와 연구를 포함한 연구 자격.', bg: isDarkMode ? 'bg-cyan-900/40' : 'bg-cyan-50' },
+        { title: '복지', icon: <Heart className="w-8 h-8" />, desc: '전문가 지원과 복지를 포함한 복지 자격.', bg: isDarkMode ? 'bg-rose-900/40' : 'bg-rose-50' },
+        { title: '행정', icon: <Shield className="w-8 h-8" />, desc: '자격 검증과 행정 업무를 포함한 행정 자격.', bg: isDarkMode ? 'bg-slate-800/40' : 'bg-slate-50' },
+        { title: '교육', icon: <BookOpen className="w-8 h-8" />, desc: '인재 양성과 교육 과정을 포함한 교육 자격.', bg: isDarkMode ? 'bg-teal-900/40' : 'bg-teal-50' },
+        { title: '외국어', icon: <Globe className="w-8 h-8" />, desc: '외국어 소통 능력 평가를 포함한 외국어 자격.', bg: isDarkMode ? 'bg-violet-900/40' : 'bg-violet-50' },
     ];
 
     const themeClasses = isDarkMode
@@ -143,7 +143,7 @@ export const Landing: React.FC = () => {
                     <div className={`md:hidden p-4 space-y-4 border-b animate-in slide-in-from-top duration-300 ${isDarkMode ? 'bg-slate-900 border-white/10' : 'bg-white border-slate-100'
                         }`}>
                         <Link to="/login" className="block py-4 px-4 bg-emerald-600 text-white rounded-xl text-center font-bold">
-                            관계자 시스템 접속
+                            KCQAADMIN
                         </Link>
                     </div>
                 )}
@@ -163,22 +163,22 @@ export const Landing: React.FC = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
                     <div className={`inline-block px-4 py-1.5 mb-8 rounded-full border text-sm font-bold tracking-widest animate-fade-in ${isDarkMode ? 'bg-white/5 border-white/10 text-emerald-400' : 'bg-emerald-50 border-emerald-100 text-emerald-600'
                         }`}>
-                        글로벌 역량 평가의 기준
+                        한국민간자격관리정보서비스
                     </div>
                     <h1 className={`text-5xl lg:text-7xl font-black mb-8 font-display tracking-tight leading-tight ${isDarkMode ? 'text-white' : 'text-slate-900'}`}>
-                        Korea Civil <br />
+                        Korea Private Qualification  <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 via-emerald-600 to-cyan-600">
-                            Qualification Association
+                            Management Information Service
                         </span>
                     </h1>
                     <p className={`max-w-3xl mx-auto text-xl mb-12 leading-relaxed font-medium ${isDarkMode ? 'text-slate-400' : 'text-slate-600'}`}>
-                        엄격하고 신뢰할 수 있는 글로벌 표준을 통해, 개인의 역량을 검증하고 전문성을 연결합니다.
+                        모든 민간자격을 한곳에서 관리.검색.증명서를 재 발급을 하실수 있습니다 .
                     </p>
 
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
                         <a href="#checker" className={`group px-10 py-5 rounded-full font-black transition-all transform hover:scale-105 shadow-xl flex items-center gap-2 ${isDarkMode ? 'bg-white text-slate-950 hover:bg-emerald-400 shadow-white/5' : 'bg-slate-900 text-white hover:bg-emerald-600 shadow-slate-200'
                             }`}>
-                            자격 진위 확인
+                            민간자격확인
                             <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                         </a>
                         <button className={`px-10 py-5 border rounded-full font-black transition-all ${isDarkMode ? 'bg-slate-800/40 border-white/10 text-white hover:bg-slate-800' : 'bg-white border-slate-200 text-slate-900 hover:bg-slate-50'
@@ -199,8 +199,8 @@ export const Landing: React.FC = () => {
                         </div>
 
                         <div className="text-center mb-12">
-                            <h2 className={`text-4xl font-black mb-4 font-display ${isDarkMode ? 'text-white' : 'text-slate-950'}`}>자격 진위 확인</h2>
-                            <p className={isDarkMode ? 'text-slate-500' : 'text-slate-400'}>KCQA에서 발급된 전문 자격의 유효성을 실시간으로 확인하실 수 있습니다.</p>
+                            <h2 className={`text-4xl font-black mb-4 font-display ${isDarkMode ? 'text-white' : 'text-slate-950'}`}>민간자격확인</h2>
+                            <p className={isDarkMode ? 'text-slate-500' : 'text-slate-400'}>모든 기관에서 발급된 민간자격의 유효성을 실시간으로 확인하실 수 있습니다.</p>
                         </div>
 
                         {searchError && (
@@ -273,13 +273,13 @@ export const Landing: React.FC = () => {
                         <div className="space-y-4" id="about-detail">
                             <h4 className="text-emerald-600 font-black tracking-[0.2em] text-sm">검증된 신뢰와 원칙</h4>
                             <h2 className={`text-5xl lg:text-6xl font-black font-display leading-tight ${isDarkMode ? 'text-white' : 'text-slate-950'}`}>
-                                글로벌 비전. <br />
-                                지역적 혁신.
+                                민간자격. <br />
+                                관리의 편리성.
                             </h2>
                         </div>
 
                         <p className={`text-xl leading-relaxed font-medium ${isDarkMode ? 'text-slate-400' : 'text-slate-600'}`}>
-                            KCQA는 전 세계 전문가들의 직무 역량을 평가하고 인증하는 표준화된 프레임워크를 제공합니다.
+                            KCQA는 모든 기관의 민간자격을 한곳에서 관리할수 있는 편리성을 제공합니다.
                         </p>
 
                         <div className="grid sm:grid-cols-2 gap-8">
@@ -288,16 +288,16 @@ export const Landing: React.FC = () => {
                                 <div className="w-12 h-12 bg-emerald-600/20 rounded-xl flex items-center justify-center text-emerald-600 mb-6">
                                     <Shield className="w-6 h-6" />
                                 </div>
-                                <h3 className={`text-lg font-bold mb-2 ${isDarkMode ? 'text-white' : 'text-slate-950'}`}>검증된 자격</h3>
-                                <p className={isDarkMode ? 'text-slate-500' : 'text-slate-500'}>철저한 규제와 표준으로 모든 자격의 신뢰성을 보장합니다.</p>
+                                <h3 className={`text-lg font-bold mb-2 ${isDarkMode ? 'text-white' : 'text-slate-950'}`}>개별적 민간자격</h3>
+                                <p className={isDarkMode ? 'text-slate-500' : 'text-slate-500'}>개인의 민간자격 관리의 편리성을 제공합니다.</p>
                             </div>
                             <div className={`p-8 rounded-3xl border transition-all ${isDarkMode ? 'bg-white/5 border-white/5 hover:border-emerald-500/30' : 'bg-slate-50 border-slate-200 hover:border-emerald-500/30'
                                 }`}>
                                 <div className="w-12 h-12 bg-emerald-600/20 rounded-xl flex items-center justify-center text-emerald-600 mb-6">
                                     <Globe className="w-6 h-6" />
                                 </div>
-                                <h3 className={`text-lg font-bold mb-2 ${isDarkMode ? 'text-white' : 'text-slate-950'}`}>글로벌 인정</h3>
-                                <p className={isDarkMode ? 'text-slate-500' : 'text-slate-500'}>국경과 산업을 초월하여 인정받는 전문 자격입니다.</p>
+                                <h3 className={`text-lg font-bold mb-2 ${isDarkMode ? 'text-white' : 'text-slate-950'}`}>기관별 민간자격</h3>
+                                <p className={isDarkMode ? 'text-slate-500' : 'text-slate-500'}>기간별 민간자격 관리의 편리성을 제공합니다.</p>
                             </div>
                         </div>
                     </div>
@@ -320,11 +320,11 @@ export const Landing: React.FC = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex flex-col lg:flex-row justify-between items-end gap-8 mb-20">
                         <div className="space-y-4 max-w-2xl" id="services-detail">
-                            <h4 className="text-emerald-600 font-bold tracking-widest text-sm">8대 핵심 가치</h4>
+                            <h4 className="text-emerald-600 font-bold tracking-widest text-sm">민간자격구분</h4>
                             <h2 className={`text-4xl lg:text-5xl font-black font-display ${isDarkMode ? 'text-white' : 'text-slate-950'}`}>전문 역량 영역</h2>
                         </div>
                         <p className={`max-w-md text-lg font-medium lg:text-right ${isDarkMode ? 'text-slate-500' : 'text-slate-500'}`}>
-                            각 분야별 최고 수준의 전문성을 제시하는 핵심 영역입니다.
+                            각 분야별 특성화된 코드로 민간자격을 관리하는 핵심 영역입니다.
                         </p>
                     </div>
 
@@ -356,7 +356,7 @@ export const Landing: React.FC = () => {
                 <div className="bg-gradient-to-r from-emerald-600 to-teal-700 rounded-[3.5rem] p-1 shadow-2xl shadow-emerald-600/20">
                     <div className={`rounded-[3.4rem] p-8 lg:p-20 grid lg:grid-cols-2 gap-16 items-center ${isDarkMode ? 'bg-slate-950' : 'bg-white'}`}>
                         <div className="space-y-8">
-                            <h2 className={`text-4xl lg:text-5xl font-black font-display ${isDarkMode ? 'text-white' : 'text-slate-950'}`}>전문성을 입증할 <br />준비가 되셨습니까?</h2>
+                            <h2 className={`text-4xl lg:text-5xl font-black font-display ${isDarkMode ? 'text-white' : 'text-slate-950'}`}>자신의 전문성을 입증할 <br />준비가 되셨습니까?</h2>
                             <p className={`text-xl leading-relaxed font-bold ${isDarkMode ? 'text-slate-400' : 'text-slate-500'}`}>
                                 이미 수천 명의 전문가들이 KCQA를 통해 자신의 가치를 증명했습니다.
                             </p>
@@ -390,7 +390,7 @@ export const Landing: React.FC = () => {
                                 <span className={`text-3xl font-black font-display tracking-tighter ${isDarkMode ? 'text-white' : 'text-slate-950'}`}>KCQA</span>
                             </div>
                             <p className={`text-lg max-w-sm leading-relaxed font-bold ${isDarkMode ? 'text-slate-500' : 'text-slate-400'}`}>
-                                혁신적인 글로벌 표준 수립을 통해 전문 자격 제도의 미래를 선도합니다.
+                                혁신적인 글로벌 표준 수립을 통해 민간자격 관리의 미래를 선도합니다.
                             </p>
                         </div>
 
@@ -405,9 +405,9 @@ export const Landing: React.FC = () => {
                         <div className="space-y-8">
                             <h4 className={`text-sm font-black tracking-[0.2em] uppercase ${isDarkMode ? 'text-white' : 'text-slate-400'}`}>문의처</h4>
                             <ul className={`space-y-4 font-bold ${isDarkMode ? 'text-slate-500' : 'text-slate-500'}`}>
-                                <li>contact@kcqa.org</li>
+                                <li>yjisc@naver.com</li>
                                 <li>010-5909-9320</li>
-                                <li>길주로270 <br />대한민국 경기도 부천시</li>
+                                <li>길주로270 <br />경기도 부천시</li>
                             </ul>
                         </div>
                     </div>
